@@ -104,15 +104,15 @@ ul {
     }
 }
 
-#path22 {
-    animation: whiteToBlack 3s ease-in-out;
-    stroke-width: 3;
-    stroke: #000;
-}
-
-#svg10 {
+.svg-firma {
     width: 200px;
     height: auto;
+
+    path {
+        animation: whiteToBlack 3s ease-in-out;
+        stroke-width: 3;
+        stroke: #000;
+    }
 }
 
 @keyframes hover-img-animation {
