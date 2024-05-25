@@ -1,0 +1,20 @@
+.footer {
+    background-color: #000;
+    color: $color-white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font-family-header;
+    letter-spacing: 2px;
+
+    &__email {
+        border-bottom: 1px solid $color-white;
+        padding-bottom: 40px;
+    }
+
+    &__logo {
+        filter: invert(1);
+        margin: 50px;
+    }
+}
