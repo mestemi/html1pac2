@@ -5,6 +5,7 @@
     <title>Clint Eastwood - Un Legado Cinematográfico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="icon" type="image/x-icon" href="./assets/images/clint-favicon.ico">
     <script type="module" src="./assets/scripts/main.js"></script>
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
   </head>
@@ -48,9 +49,24 @@
           </div>
           <div class="detail__more">
             <div class="detail__image">
-              <img src="./assets/images/filmografia/crymacho.jpg" alt="Cry Macho" />
+              <img
+                srcset="
+                  ./assets/images/filmografia/crymacho.jpg?as=webp&width=350 350w
+                  ./assets/images/filmografia/crymacho.jpg?as=webp&width=260 260w,
+                  ./assets/images/filmografia/crymacho.jpg?as=webp&width=190 190w,
+                  ./assets/images/filmografia/crymacho.jpg?as=webp&width=150 150w"
+                src="./assets/images/filmografia/crymacho.jpg?width=350"
+                alt="Portada Cry Macho" />
             </div>
           </div>
+          <figure class="detail__picture">
+            <picture>
+              <source media="(max-width: 799px)" srcset="./assets/images/clint-directing-800w.jpg" />
+              <source media="(min-width: 800px)" srcset="./assets/images/clint-directing-1160w.jpg" />
+              <img src="./assets/images/clint-directing-1160w.jpg" alt="Clint Eastwood dirigiendo Cry Macho" />
+            </picture>
+            <figcaption> Clint Eastwood dirige el set de “Cry Macho”. (Claire Folger / Warner Bros.)</figcaption>
+          </figure>
           <div class="critics">
             <blockquote class="critics__quote" cite='https://www.abc.es/play/cine/criticas/abci-critica-macho-gigantesco-cine-menor-y-leccion-vida-viejo-clint-eastwood-202109240246_noticia.html'>
               <q>
@@ -72,7 +88,11 @@
             </blockquote>
           </div>
           <div class="detail__video">
-            <img class="detail__video-overlay" src="./assets/images/crymacho-1.jpg" alt="Cry Macho" />
+            <img
+              class="detail__video-overlay"
+              srcset="./assets/images/crymacho-1.jpg?width=1160&quality=75, ./assets/images/crymacho-1.jpg?width=1450&quality=75 1.5x, ./assets/images/crymacho-1.jpg?width=1815&quality=75 2x"
+              src="./assets/images/crymacho-1.jpg?width=1160&quality75"
+              alt="Cry Macho Trailer" />
             <i class="play-trailer fa-regular fa-circle-play"></i>  
             <iframe class="trailer-video" src="https://www.youtube.com/embed/dp5J1FZnGVg?si=LJUsi4lQgx7aoT-n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>

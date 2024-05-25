@@ -14,7 +14,12 @@
     }
 
     &__logo {
-        filter: invert(1);
         margin: 50px;
+
+        & img {
+            min-width: 50px;
+            max-width: 350px;
+            height: auto;
+        }
     }
 }

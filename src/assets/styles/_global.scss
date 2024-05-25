@@ -17,6 +17,7 @@ body {
 a {
     color: $color-link;
     text-decoration: none;
+    font-weight: 700;
 
     &:hover{
         color: $color-link-hover;
@@ -65,5 +66,60 @@ ul {
             transition: background-color 0.3s ease-in-out;
         }
     }
+}
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-70 {
+    flex: 70%;
+    padding-right: 10px;
+}
+
+.flex-item-30 {
+    flex: 30%;
+}
+
+@media (max-width: 799px) {
+    .flex-item-70, .flex-item-30 {
+      flex: 100%;
+    }
+}
+
+@keyframes whiteToBlack {
+    0% {
+        fill: transparent;
+        stroke: #000;
+        transform: scale(0.5);
+        stroke-width: 1;
+        
+    }
+    100% {
+        fill: #000;
+        stroke: #000;
+        transform: scale(1);
+        stroke-width: 3;
+    }
+}
+
+#path22 {
+    animation: whiteToBlack 3s ease-in-out;
+    stroke-width: 3;
+    stroke: #000;
+}
+
+#svg10 {
+    width: 200px;
+    height: auto;
+}
+
+@keyframes hover-img-animation {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    100% {
+      transform: scale(1.075) rotate(-2deg);
+    }
 }
